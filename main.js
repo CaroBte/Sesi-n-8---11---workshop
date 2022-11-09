@@ -23,6 +23,6 @@ submit.addEventListener("click", () => {
 selected.forEach(element => {
     element.addEventListener("click", () => {
         value = element.getAttribute("value")
-        span.replaceWith(`You selected ${value} out of 5`)
+        span.replaceChildren(`You selected ${value} out of 5`)
     })
 })
